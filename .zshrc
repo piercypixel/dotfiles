@@ -1,5 +1,5 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export ZSH="/home/$USER/.oh-my-zsh"
+export ZSH="/home/$USERNAME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 ENABLE_CORRECTION="true"
