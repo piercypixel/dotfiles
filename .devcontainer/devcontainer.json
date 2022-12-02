@@ -1,27 +1,22 @@
 {
-	"name": "Codespaces Node.js Starter",
-	"extensions": [
-	  "cschleiden.vscode-github-actions",
-	  "ms-azuretools.vscode-docker",
-	  "vscode-icons-team.vscode-icons",
-	  "visualstudioexptteam.vscodeintellicode",
-	  "GitHub.codespaces",
-	  "GitHub.copilot",
-	  "GitHub.vscode-pull-request-github",
-	  "eamodio.gitlens",
-	  "wayou.vscode-todo-highlight",
-	  "redhat.vscode-commons",
-	  "redhat.vscode-yaml",
-	  "snyk-security.snyk-vulnerability-scanner"
-	],
-	"dockerFile": "Dockerfile",
-	"settings": {
-	  "terminal.integrated.profiles.linux": {
-		"zsh": {
-		  "path": "/usr/bin/zsh"
-		}
-	  },
-	  "terminal.integrated.defaultProfile.linux": "zsh"
-	}
+  "name": "Codespaces Node.js Starter",
+  "extensions": [
+    "ms-azuretools.vscode-docker",
+    "vscode-icons-team.vscode-icons",
+    "visualstudioexptteam.vscodeintellicode",
+    "GitHub.codespaces",
+    "GitHub.copilot",
+    "eamodio.gitlens",
+    "wayou.vscode-todo-highlight",
+    "snyk-security.snyk-vulnerability-scanner"
+  ],
+  "dockerFile": "Dockerfile",
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "/usr/bin/zsh"
+      }
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh"
   }
-  
+}
