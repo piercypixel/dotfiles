@@ -12,7 +12,7 @@
     "GitHub.copilot",
     "eamodio.gitlens",
     "wayou.vscode-todo-highlight",
-    "snyk-security.snyk-vulnerability-scanner"
+    "foxundermoon.shell-format"
   ],
   "settings": {
     "terminal.integrated.profiles.linux": {
