@@ -57,5 +57,4 @@ echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This
 echo "\n" >>"$HOME/.zshrc"
 
 # change default shell
-type -a zsh
-chsh -s /bin/zsh
+export SHELL=$(which zsh)
