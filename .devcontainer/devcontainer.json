@@ -1,5 +1,9 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-  "name": "Codespaces Node.js Starter",
+  "name": "Dotfiles",
+  "dockerFile": "Dockerfile",
+  "mounts": ["source=pablodev-zshhistory,target=/commandhistory,type=volume"],
   "extensions": [
     "ms-azuretools.vscode-docker",
     "vscode-icons-team.vscode-icons",
@@ -10,7 +14,6 @@
     "wayou.vscode-todo-highlight",
     "snyk-security.snyk-vulnerability-scanner"
   ],
-  "dockerFile": "Dockerfile",
   "settings": {
     "terminal.integrated.profiles.linux": {
       "zsh": {
@@ -19,4 +22,19 @@
     },
     "terminal.integrated.defaultProfile.linux": "zsh"
   }
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "uname -a",
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
 }
