@@ -24,8 +24,8 @@ git config --global merge.tool vscode
 # install oh-my-zsh and plugins
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-/root/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/root/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 sed -i -e 's/^\(plugins=(.*\)\()\s*$\)/\1\n\tgit\n\tzsh-autosuggestions\n\tzsh-syntax-highlighting\n)/g' $HOME/.zshrc
 
@@ -55,3 +55,7 @@ echo 'export NVM_DIR="$HOME/.nvm"' >>"$HOME/.zshrc"
 echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm' >>"$HOME/.zshrc"
 echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion' >>"$HOME/.zshrc"
 echo "\n" >>"$HOME/.zshrc"
+
+# change default shell
+type -a zsh
+chsh -s /bin/zsh
